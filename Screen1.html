@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Ticket to ride</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Ticket to ride"> <meta name="author" content="Rafael">
+		<link rel="stylesheet" type="text/css" href="style.css">
+ 	</head>
+
+	<body>
+		<h1> Ticket to Ride - Salas de jogos </h1>
+		
+		<div class="flex-container">
+
+			<div> 
+				<img src="capa.jpg" alt="Ticket to ride screen" style="float:left;width:500px;height:500px;"> 
+			</div>
+			<div>
+				<h2> Salas abertas </h2>
+				<p> Escolha uma sala aberta para entrar. O anfitrião deve ter lhe fornecido a senha. </p>
+				<div class="vertical-menu">
+		  			<a href="#" class="active">Sala Nome1</a>
+		  			<a href="#">Sala Nome2</a>
+		  			<a href="#">Sala Nome3</a>
+		 			<a href="#">Sala NomeN</a>
+				</div>
+
+				<h2> Criar nova sala </h2>
+				<p> Crie uma nova sala para jogar, fornecendo os dados abaixo: </p>
+				<form>
+		  		<label for="room_name">Nome da sala:</label><br>
+		  		<input type="text" id="room_name" name="room_name"><br>
+		 		<label for="room_pswd">Senha da sala:</label><br>
+		  		<input type="text" id="room_pswd" name="room_pswd">
+				</form>
+				<button type="button" onclick="myFunction()">Iniciar Jogo</button>
+			</div>
+		</div>
+	</body>
+</html>

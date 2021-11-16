@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Ticket to ride </title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Ticket to ride"> <meta name="author" content="Rafael">
+		<link rel="stylesheet" type="text/css" href="style.css">
+ 	</head>
+
+	<body>
+		<h1> Ticket to Ride - Sala: NOME </h1>
+		
+		<div class="flex-container">
+
+			<div> 
+				<img src="capa.jpg" alt="Ticket to ride screen" style="float:left;width:500px;height:500px;"> 
+			</div>
+			<div>
+				<h2> Participantes </h2>
+				<p> Lista de participantes on-line: </p>
+				<div class="vertical-menu">
+		  			<b href="#">Participante 1</b>
+		  			<b href="#">Participante 2</b>
+		  			<b href="#">Participante 3</b>
+		 			<b href="#"> </b>
+		 			<b href="#"> </b>
+				</div>
+				<p> Insira o seu nome e escolha a cor dos seus trens, dentre as que estiverem disponíveis: </p>
+				<form action="/action_page.php">
+	    			<label for="pname">Nome do Jogador:</label>
+	    			<input type="text" id="pname" name="playername" placeholder="Seu nome..">
+					<label for="cor">Cor dos trens:</label>
+					    <select id="cor" name="cor">
+					      <option value="amarelo">Amarelo</option>
+					      <option value="azul">Azul</option>
+					      <option value="preto">Preto</option>
+					      <option value="verde">Verde</option>
+					      <option value="vermelho">Vermelho</option> 
+					    </select>
+					  
+					    <input type="submit" value="Entrar">
+					  </form>
+			</div>
+		</div>
+	</body>
+</html>

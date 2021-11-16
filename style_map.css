@@ -1,0 +1,130 @@
+div.screen {
+  position: relative;
+  background-color: white;
+  width: 1400px;
+  height: 770px;
+  border: 3px solid #73AD21;
+} 
+
+div.map {
+  position: absolute;
+  top: 0px;
+  left: 250px;
+  width: auto;
+  height: auto;
+}
+
+div.targets_set {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: auto;
+  height: auto;
+  margin: 3px;
+}
+
+div.targets_set:hover {
+  border: 2px solid #777;
+}
+
+.flex-cc-table {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.flex-cc-table  > div {
+  background-color: white;
+  margin: 3px;
+}
+
+.flex-cc-table  > div:hover {
+  border: 2px solid #777;
+}
+
+.flex-targets {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.flex-targets > div {
+  background-color: white;
+  margin: 5px;
+}
+.flex-targets > div:hover {
+  border: 3px solid #777;
+}
+
+.flex-players {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+div.players {
+  position: relative;
+  margin: 3px;
+  border: 3px;
+  float:down;
+  padding: 1px;
+  font-size: 100%;
+  width:200px;
+  height:90px;
+}
+
+div.p_points {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  margin: 1px;
+  border: 1px solid black;
+  width: 52px;
+  height: 18px;
+}
+div.p_car {
+  position: absolute;
+  top: 24px;
+  right: 2px;
+  margin: 1px;
+  border: 1px solid black;
+  width: 52px;
+  height: 18px;
+}
+div.p_targets {
+  position: absolute;
+  top: 46px;
+  right: 2px;
+  margin: 1px;
+  border: 1px solid black;
+  width: 52px;
+  height: 18px;
+}
+div.p_car_cards {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  margin: 1px;
+  border: 1px solid black;
+  width: 52px;
+  height: 18px;
+}
+button { 
+	position: absolute;
+    bottom: 70px;
+    right: 250px;	
+	color: black; 
+	padding: 1px; 
+	font-size: 110%;
+}
+
+
