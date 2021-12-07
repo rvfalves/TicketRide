@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Ticket to ride </title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Ticket to ride"> <meta name="author" content="Rafael">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+ 	</head>
+
+	<body>
+		<h1> Ticket to Ride - {{ sala.nome }} </h1>
+		
+		<div class="flex-container">
+
+			<div> 
+				<img src="{{ url_for('static', filename='capa.jpg') }}" alt="Ticket to ride screen" style="float:left;width:500px;height:500px;"> 
+			</div>
+			<div>
+				<h2> Participantes </h2>
+				<p> Lista de participantes on-line: </p>
+				<div class="vertical-menu">
+		  			{% if sala.jogadores_nome %}
+			  			{% for x in sala.jogadores_nome | sort %}
+			  			<b href="#">{{x}}</b>
+			 			{% endfor %}
+		 			{% else %}
+		 				<b href="#">Sala vazia</b>
+		 			{% endif %}
+
+				</div>
+				<p> Insira o seu nome e escolha a cor dos seus trens, dentre as que estiverem disponíveis: </p>
+				<form method = "POST" action = "{{ url_for('jogo') }}">
+	    			<label for="pname">Nome do Jogador:</label>
+	    			<input type="text" id="pname" name="playername" placeholder="Seu nome..">
+					<label for="cor">Cor dos trens:</label>
+					    <select id="cor" name="cor">
+					      <option value="amarelo">Amarelo</option>
+					      <option value="azul">Azul</option>
+					      <option value="preto">Preto</option>
+					      <option value="verde">Verde</option>
+					      <option value="vermelho">Vermelho</option> 
+					    </select>
+					  
+					<input type="submit" value="Entrar">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

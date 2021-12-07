@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Ticket to ride </title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Ticket to ride"> <meta name="author" content="Rafael">
+		<link rel="stylesheet" type="text/css" href="style_map.css">
+ 	</head>
+
+	<body>
+		
+		<div class="screen">
+
+			<div class="map"> 
+				<img src="mapa.png" alt="mapa" style="float:left;width:110%;height:110%;"> 
+			</div>
+			<div class="targets_set"> 
+				<img src="objetivo_verso.jpg" alt="monte de objetivos" style="float:left;width:150px;height:100px;">  
+			</div>
+			<div class="flex-targets"> 
+				<div>
+				<img src="objetivo1.jpg" alt="carta objetivos" style="float:left;width:220px;height:140px;">  
+				</div>
+				<div> 
+				<img src="objetivo2.jpg" alt="carta objetivos" style="float:left;width:220px;height:140px;">  
+				</div>
+				<div> 
+				<img src="objetivo3.jpg" alt="carta objetivos" style="float:left;width:220px;height:140px;">  
+				</div>
+				<div> 
+				<img src="objetivo4.jpg" alt="carta objetivos" style="float:left;width:220px;height:140px;">  
+				</div>
+			</div>
+			<div class="flex-cc-table"> 
+				<div>
+				<img src="cc_vermelho.jpg" alt="carta objetivos" style="float:left;width:150px;height:100px;">  
+				</div>
+				<div> 
+				<img src="cc_branco.jpg" alt="carta objetivos" style="float:left;width:150px;height:100px;">  
+				</div>
+				<div> 
+				<img src="cc_verde.jpg" alt="carta objetivos" style="float:left;width:150px;height:100px;">  
+				</div>
+				<div> 
+				<img src="cc_preto.jpg" alt="carta objetivos" style="float:left;width:150px;height:100px;">  
+				</div>
+				<div> 
+				<img src="cc_locomotiva.jpg" alt="carta objetivos" style="float:left;width:150px;height:100px;">  
+				</div>
+				<div> 
+				<img src="cc_verso.jpg" alt="carta objetivos" style="float:left;width:150px;height:100px;">  
+				</div>
+			</div>
+			<button type="button" onclick="myFunction()">Escolher objetivos</button>
+			<div class="players" style="border: solid green;"> 
+				<p><b> Nome Jogador1 </b></p>
+				<div class="p_points"><b> 0 </b><img src="trofeu.jpeg" alt="pts" style="float:left;width:30px;height:100%;"></div>
+				<div class="p_car"><b> 45 </b> <img src="car_verde.jpeg" alt="verde" style="float:left;width:30px;height:100%;"></div>
+				<div class="p_targets"><b> 0 </b> <img src="objetivo_verso.jpg" alt="objetivo" style="float:left;width:30px;height:100%;"></div>
+				<div class="p_car_cards"><b> 4 </b> <img src="cc_verso.jpg" alt="objetivo" style="float:left;width:30px;height:100%;"></div>
+			</div>
+			<div class="players" style="border: solid red;"> 
+				<p><b> Nome Jogador2 </b></p>
+				<div class="p_points"><b> 0 </b><img src="trofeu.jpeg" alt="pts" style="float:left;width:30px;height:100%;"></div>
+				<div class="p_car"><b> 45 </b> <img src="car_vermelho.jpeg" alt="vermelho" style="float:left;width:30px;height:100%;"></div>
+				<div class="p_targets"><b> 0 </b> <img src="objetivo_verso.jpg" alt="objetivo" style="float:left;width:30px;height:100%;"></div>
+				<div class="p_car_cards"><b> 4 </b> <img src="cc_verso.jpg" alt="objetivo" style="float:left;width:30px;height:100%;"></div>
+			</div>
+			<div class="players" style="border: solid black;"> 
+				<p><b> Nome Jogador3 </b></p>
+				<div class="p_points"><b> 0 </b><img src="trofeu.jpeg" alt="pts" style="float:left;width:30px;height:100%;"></div>
+				<div class="p_car"><b> 45 </b> <img src="car_preto.jpeg" alt="preto" style="float:left;width:30px;height:100%;"></div>
+				<div class="p_targets"><b> 0 </b> <img src="objetivo_verso.jpg" alt="objetivo" style="float:left;width:30px;height:100%;"></div>
+				<div class="p_car_cards"><b> 4 </b> <img src="cc_verso.jpg" alt="objetivo" style="float:left;width:30px;height:100%;"></div>
+			</div>
+			<div class="players" style="border: solid yellow;"> 
+				<p><b> Nome Jogador4 </b></p>
+				<div class="p_points"><b> 0 </b><img src="trofeu.jpeg" alt="pts" style="float:left;width:30px;height:100%;"></div>
+				<div class="p_car"><b> 45 </b> <img src="car_amarelo.jpeg" alt="amarelo" style="float:left;width:30px;height:100%;"></div>
+				<div class="p_targets"><b> 0 </b> <img src="objetivo_verso.jpg" alt="objetivo" style="float:left;width:30px;height:100%;"></div>
+				<div class="p_car_cards"><b> 4 </b> <img src="cc_verso.jpg" alt="objetivo" style="float:left;width:30px;height:100%;"></div>
+			</div>
+			<div class="players" style="border: solid blue;"> 
+				<p><b> Nome Jogador5 </b></p>
+				<div class="p_points"><b> 0 </b><img src="trofeu.jpeg" alt="pts" style="float:left;width:30px;height:100%;"></div>
+				<div class="p_car"><b> 45 </b> <img src="car_azul.jpeg" alt="azul" style="float:left;width:30px;height:100%;"></div>
+				<div class="p_targets"><b> 0 </b> <img src="objetivo_verso.jpg" alt="objetivo" style="float:left;width:30px;height:100%;"></div>
+				<div class="p_car_cards"><b> 4 </b> <img src="cc_verso.jpg" alt="objetivo" style="float:left;width:30px;height:100%;"></div>
+			</div>
+
+		</div>
+	</body>
+</html>
